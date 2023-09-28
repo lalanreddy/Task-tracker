@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Task Tracker Application</h1>
+        <form id="task-form">
+            <input type="text" id="task-title" placeholder="Task title" required>
+            <input type="text" id="task-description" placeholder="Task description" required>
+            <input type="date" id="task-due-date" required>
+            <button type="submit">Add Task</button>
+        </form>
+        <!-- Add a search container with input and button -->
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Search">
+            <button id="search-button">Search</button>
+        </div>
+        <div class="filters">
+            <label for="sort">Sort By:</label>
+            <select id="sort">
+                <option value="due-date">Due Date</option>
+                <option value="status">Status</option>
+            </select>
+        </div>
+        <ul id="task-list">
+            <!-- Tasks will be dynamically generated here -->
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
